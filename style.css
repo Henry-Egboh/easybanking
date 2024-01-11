@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+/* nav {
+  height: 60px;
+} */
+
+/* .showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65rem;
+  gap: 1rem;
+  background-color: var(--Very-Light-Gray);
+} */
+
+/* .showcase div:nth-of-type(1) {
+    background-color: aqua;
+}
+
+.showcase div:nth-of-type(2) {
+    background-color: rgb(235, 157, 235);
+}
+
+.img-position {
+    position: relative;
+    overflow: hidden;
+} */
+
+/* .img-mockups {
+    width: 100%;
+} */
+
+/* .img-bottom {
+    position: absolute;
+    top: -12rem;
+    right: -10rem;
+    width: 100%;
+} */
+
+/* .img-top {
+    position: absolute;
+    top: -6rem;
+    right: -6rem;
+    z-index: 99;
+    width: 70%;
+} */
