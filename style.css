@@ -22,12 +22,6 @@ body {
   --White: hsl(0, 0%, 100%);
 }
 
-/* .container {
-    width: 900px;
-    margin: 0 auto;
-    border: 1px solid var(--Grayish-Blue);
-} */
-
 /* ================================================= TOP NAV SECTION OF THE PAGE ========================================= */
 .top-nav {
   display: flex;
@@ -232,3 +226,88 @@ body {
   line-height: 1.2rem;
 }
 
+/* ====================================================================================================================== */
+/* ============================================== FOOTER ============================================================= */
+.footer {
+  background-color: var(--Dark-Blue);
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+/* .footer section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+} */
+
+.socials {
+  display: flex;
+  gap: 0.6rem;
+  padding-top: 4rem;
+}
+
+.socials img {
+  width: 8%;
+}
+.footer-logo {
+  fill: var(--White);
+  fill-opacity: 1;
+}
+
+.footer-logo path {
+  fill: white;
+  fill-opacity: 1;
+  /* color: var(--White);
+  background-color: var(--White);
+  outline-color: var(--White); */
+}
+
+.footer section:nth-of-type(2) ul,
+.footer section:nth-of-type(3) ul {
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.footer section:nth-of-type(2) ul li,
+.footer section:nth-of-type(3) ul li {
+  line-height: 2.5rem;
+}
+
+.footer section:nth-of-type(2) ul li a,
+.footer section:nth-of-type(3) ul li a {
+  text-decoration: none;
+  color: var(--Very-Light-Gray);
+}
+
+.footer section:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+  width: 75%;
+  align-self: flex-end;
+}
+
+.rights {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+.copyright {
+  background-color: var(--Dark-Blue);
+  color: var(--Very-Light-Gray);
+  font-weight: 300;
+  font-size: 0.6rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+}
