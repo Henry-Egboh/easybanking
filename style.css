@@ -8,8 +8,10 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
+    height: 100vh;
 }
 
+/* ==============================================VARIABLE DECLARATION =============================================== */
 :root {
   --Dark-Blue: hsl(233, 26%, 24%);
   --Lime-Green: hsl(136, 65%, 51%);
@@ -26,12 +28,13 @@ body {
     border: 1px solid var(--Grayish-Blue);
 } */
 
+/* ================================================= TOP NAV SECTION OF THE PAGE ========================================= */
 .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0rem 8rem;
-    padding: 2rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
 .top-nav div:nth-child(2) ul {
@@ -47,7 +50,7 @@ body {
     color: var(--Grayish-Blue);
 }
 
-.top-nav div:nth-child(3) > div {
+.button {
     background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
     padding: 0.8rem 1.5rem;
     border: 1px solid var(--Very-Light-Gray);
@@ -55,48 +58,61 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--White);
+    text-align: center;
 }
 
-/* nav {
-  height: 60px;
-} */
-
-/* .showcase {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 65rem;
-  gap: 1rem;
-  background-color: var(--Very-Light-Gray);
-} */
-
-/* .showcase div:nth-of-type(1) {
-    background-color: aqua;
+/* ================================================ SHOWCASE SECTION OF THE PAGE ====================================== */
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    background-color: var(--Very-Light-Gray);
+    /* column-gap: 4rem; */
 }
 
-.showcase div:nth-of-type(2) {
-    background-color: rgb(235, 157, 235);
+.showcase-text {
+    align-self: center;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
-.img-position {
+.showcase-text h1 {
+    line-height: 4rem;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--Dark-Blue);
+}
+
+.showcase-text p {
+    line-height: 1.6rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--Grayish-Blue);
+    letter-spacing: 1px;
+}
+
+.showcase-btn {
+    width: 30%;
+}
+
+.showcase-image {
     position: relative;
     overflow: hidden;
-} */
+}
 
-/* .img-mockups {
-    width: 100%;
-} */
-
-/* .img-bottom {
+.img-bottom {
     position: absolute;
-    top: -12rem;
-    right: -10rem;
-    width: 100%;
-} */
+    top: -10em;
+    right: -8rem;
+    width: 120%;
+}
 
-/* .img-top {
+.img-top {
     position: absolute;
-    top: -6rem;
-    right: -6rem;
-    z-index: 99;
-    width: 70%;
-} */
+    top: -8rem;
+    right: -8rem;
+    z-index: 1;
+    width: 100%;
+}
