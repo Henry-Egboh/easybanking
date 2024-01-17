@@ -394,7 +394,7 @@ body {
     display: block;
     /* right: 0; */
   }
-  /*  SHOWCASE / HERO SECTION ====================== */
+  /*  SHOWCASE / HERO SECTION  */
   .showcase {
     grid-template-rows: repeat(2, 1fr);
     height: auto;
@@ -456,6 +456,19 @@ body {
 
 .showcase1 div:nth-child(1) {
   grid-column: 1 / 2;
+}
+
+/* LATEST ARTICLES SECTION */
+.card-container {
+  padding: 8rem 1rem;
+}
+
+.card-container h1 {
+  text-align: center;
+}
+
+.card-items {
+  grid-template-columns: 1fr;
 }
 
 /* ==================================== SMALLER MOBILE SCREEN ================================================== */
@@ -526,6 +539,19 @@ body {
 
   .showcase1 div:nth-child(1) {
     grid-column: 1 / 3;
+  }
+
+  /* LATEST ARTICLES SECTION */
+  .card-container {
+    padding: 8rem 2rem;
+  }
+
+  .card-container h1 {
+    text-align: start;
+  }
+
+  .card-items {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* ================================================ MINI LAPTOPS ================================================= */
@@ -622,6 +648,19 @@ body {
     grid-column: 1 / 5;
   }
 
+  /* LATEST ARTICLES SECTION */
+  .card-container {
+    padding: 8rem 4rem;
+  }
+
+  .card-container h1 {
+    text-align: start;
+  }
+
+  .card-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   /* showcase text */
   /* .showcase-text {
     margin-top: 20rem;
@@ -638,5 +677,18 @@ body {
   .showcase-text {
     width: 75%;
     padding-left: 8rem;
+  }
+
+  .showcase1 {
+    padding: 8rem;
+  }
+
+  /* LATEST ARTICLES SECTION */
+  .card-container {
+    padding: 8rem;
+  }
+
+  .card-items {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
