@@ -471,6 +471,31 @@ body {
   grid-template-columns: 1fr;
 }
 
+/* FOOTER SECTION */
+.footer {
+  padding: 4rem 1rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.socials {
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.footer-button {
+  width: 50%;
+  align-self: center;
+  font-size: 0.8rem;
+}
+
+.footer section:nth-of-type(4) {
+  display: none;
+}
+
 /* ==================================== SMALLER MOBILE SCREEN ================================================== */
 @media (min-width: 576px) {
   /* showcase text */
@@ -484,6 +509,32 @@ body {
   /*  SHOWCASE TEXT == */
   .showcase-text {
     margin-top: 8rem;
+  }
+
+  /* FOOTER SECTION */
+  .footer {
+    padding: 4rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: start;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .socials {
+    padding-top: 2rem;
+    justify-content: start;
+  }
+
+  .footer-button {
+    width: 50%;
+    align-self: flex-start;
+    font-size: 0.7rem;
+  }
+
+  .footer section:nth-of-type(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
   }
 }
 /* ========================================================================== */
@@ -552,6 +603,30 @@ body {
 
   .card-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FOOTER SECTION */
+  .footer {
+    padding: 4rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* .socials {
+    padding-top: 2rem;
+    justify-content: start;
+  } */
+
+  .footer-button {
+    width: 100%;
+  }
+
+  .footer section:nth-of-type(5) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .footer section:nth-of-type(4) {
+    display: none;
   }
 }
 /* ================================================ MINI LAPTOPS ================================================= */
@@ -661,6 +736,30 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 
+    /* FOOTER SECTION */
+    .footer {
+      padding: 4rem 4rem;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  
+    .socials {
+      padding-top: 4rem;
+    }
+  
+    .footer-button {
+      width: 80%;
+      align-self: flex-end;
+    }
+  
+    .footer section:nth-of-type(5) {
+      grid-column: 5 / 6;
+      grid-row: 1 / 2;
+    }
+  
+    .footer section:nth-of-type(4) {
+      display: flex;
+    }
+
   /* showcase text */
   /* .showcase-text {
     margin-top: 20rem;
@@ -690,5 +789,9 @@ body {
 
   .card-items {
     grid-template-columns: repeat(4, 1fr);
+  }
+/* footer section */
+  .footer {
+    padding: 4rem 8rem;
   }
 }
