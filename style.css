@@ -441,6 +441,24 @@ body {
   }
 }
 
+/* SHOWCASE1 / FEATURES SECTION */
+.showcase1 {
+  height: auto;
+  padding: 8rem 1rem;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.showcase1 > div {
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase1 div:nth-child(1) {
+  grid-column: 1 / 2;
+}
+
+/* ==================================== SMALLER MOBILE SCREEN ================================================== */
 @media (min-width: 576px) {
   /* showcase text */
   .showcase-text {
@@ -489,14 +507,31 @@ body {
 
   /* SHOWCASE TEXT */
   .showcase-text {
-    margin-top: 16rem;
+    margin-top: 12rem;
+    padding: 4rem 2rem 8rem;
+  }
+
+  /* SHOWCASE1 / FEATURES SECTION */
+  .showcase1 {
+    min-height: 600px;
+    padding: 8rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+  }
+
+  .showcase1 > div {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .showcase1 div:nth-child(1) {
+    grid-column: 1 / 3;
   }
 }
 /* ================================================ MINI LAPTOPS ================================================= */
 @media (min-width: 992px) {
-  /* SHOWCASE TEXT */
   .showcase-text {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 /* =============================================== LAPTOP SCREENS =========================================================== */
@@ -545,25 +580,46 @@ body {
   .showcase-btn {
     align-self: flex-start;
   }
-  
+
   .showcase-image-desktop {
     position: relative;
     width: 100%;
   }
-  
+
   .img-bottom-desktop {
     position: absolute;
     top: -16rem;
     right: -24rem;
     width: 150%;
   }
-  
+
   .img-top-desktop {
     position: absolute;
     top: -7rem;
     right: -7rem;
     z-index: 1;
     width: 90%;
+  }
+
+  .showcase1 {
+    padding: 8rem 4rem;
+  }
+
+  /* SHOWCASE1 / FEATURES SECTION */
+  .showcase1 {
+    min-height: 600px;
+    padding: 8rem 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: start;
+  }
+
+  /* .showcase1 > div {
+    justify-content: start;
+    align-items: start;
+  } */
+
+  .showcase1 div:nth-child(1) {
+    grid-column: 1 / 5;
   }
 
   /* showcase text */
@@ -580,7 +636,7 @@ body {
   }
   /* showcase text */
   .showcase-text {
-      width: 75%;
-      padding-left: 8rem;
-    }
+    width: 75%;
+    padding-left: 8rem;
+  }
 }
