@@ -203,7 +203,7 @@ body {
   background-color: var(--Very-Light-Gray);
 }
 
-.card-container h1 {
+.card-container h2 {
   color: var(--Dark-Blue);
   font-weight: 400;
   font-size: 2rem;
@@ -346,6 +346,10 @@ body {
   transition: 300ms ease-in-out;
 }
 
+.socials a:hover, .socials a:focus-within {
+  color: var(--Lime-Green);
+}
+
 /* .socials a:hover {
   color: var(--Lime-Green);
 } */
@@ -404,7 +408,7 @@ body {
 
 .copyright a {
   text-decoration: none;
-  color: var(--Grayish-Blue);
+  color: var(--Lime-Green);
 }
 
 /* =================================================================================================================================
