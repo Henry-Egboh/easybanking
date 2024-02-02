@@ -395,7 +395,6 @@ body {
 
 .copyright {
   background-color: var(--Dark-Blue);
-  color: var(--Very-Light-Gray);
   font-weight: 300;
   font-size: 0.6rem;
   text-align: center;
@@ -404,11 +403,20 @@ body {
   gap: 0.8rem;
   justify-content: center;
   align-items: center;
+
+.copyright-link {
+  display: flex;
+  gap: 0.4rem;
 }
 
-.copyright a {
-  text-decoration: none;
-  color: var(--Lime-Green);
+  p {
+    color: var(--Very-Light-Gray);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--Lime-Green);
+  }
 }
 
 /* =================================================================================================================================
