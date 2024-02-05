@@ -285,50 +285,50 @@ body {
   fill: var(--White);
 }
 
-.youtube {
+/* .youtube {
   fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
 .youtube:hover {
   fill: var(--Lime-Green);
-}
+} */
 
-.fb {
+/* .fb {
   fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
 .fb:hover {
   fill: var(--Lime-Green);
-}
+} */
 
-.instagram {
+/* .instagram {
   fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
 .instagram:hover {
   fill: var(--Lime-Green);
-}
+} */
 
-.pinterest {
+/* .pinterest {
   fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
 .pinterest:hover {
   fill: var(--Lime-Green);
-}
+} */
 
-.twitter {
+/* .twitter {
   fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
 .twitter:hover {
   fill: var(--Lime-Green);
-}
+} */
 
 .socials {
   display: flex;
@@ -336,23 +336,17 @@ body {
   padding-top: 4rem;
 }
 
-/* .socials img {
-  width: 80%;
-} */
-
 .socials a {
   text-decoration: none;
-  color: var(--White);
+  /* color: var(--White); */
+  fill: var(--White);
   transition: 300ms ease-in-out;
 }
 
-.socials a:hover, .socials a:focus-within {
-  color: var(--Lime-Green);
+.socials a:hover {
+  /* color: var(--Lime-Green); */
+  fill: var(--Lime-Green);
 }
-
-/* .socials a:hover {
-  color: var(--Lime-Green);
-} */
 
 .footer-listings ul {
   list-style: none;
